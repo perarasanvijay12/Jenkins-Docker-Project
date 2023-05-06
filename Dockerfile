@@ -1,6 +1,5 @@
 FROM  centos:latest
 MAINTAINER vikashashoke@gmail.com
-RUN sudo apt-get update
 RUN deb http://archive.ubuntu.com/ubuntu bionic-updates main universe
 RUN sudo apt-get install -y httpd zip unzip
 RUN sudo add-apt-repository universe
