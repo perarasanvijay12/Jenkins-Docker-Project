@@ -1,8 +1,6 @@
 FROM  centos:latest
 MAINTAINER vikashashoke@gmail.com
-RUN deb http://archive.ubuntu.com/ubuntu bionic-updates main universe
-RUN sudo apt-get install -y httpd zip unzip
-RUN sudo add-apt-repository universe
+RUN yum install -y httpd \zip \unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
 WORKDIR /var/www/html/
 RUN unzip photogenic.zip
